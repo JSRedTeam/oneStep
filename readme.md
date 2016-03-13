@@ -1,0 +1,2 @@
+# One Step Documentation
+This is an e-commerce app which can save your time from preparing a meal. It suggest nice dishes which takes short time cooking everyday, and it provide the raw ingrediants which is already cut, and last but not least, it also provide the cooking steps. That's why the app is so called "one step", from choosing your dish to have a good meal, you only need one step!
