@@ -1,0 +1,56 @@
+.row{
+  line-height: 5em;
+}
+.cart{
+  background-color: lightgrey;
+}
+.cart >*{
+  background-color: white;
+}
+.cart{
+  font-size: 2em;
+}
+
+.header-group{
+  line-height: 4em;
+  font-size: 1.5em;
+}
+.header-group h1{
+  margin-top: 0.6em;
+  font-size: 1.5em;
+}
+
+.cart-table-footer button, .cart-table-th button{
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+.select-all, .total-price{
+ margin-top: 0.5em;
+}
+
+.cart .cart-table-th, .cart .cart-table-footer, .cart-order-list{
+  margin-top: 1em;
+}
+
+
+.quantity *{
+  line-height: 3.4em;
+}
+
+input[type='checkbox']{
+  width: 0.8em;
+  height: 0.8em;
+}
+
+.login-or-register{
+  margin-top: 15em;
+}
+
+.login-or-register *{
+  font-size: 1.2em;
+  margin-top: 0.3em;
+}
+
+
+
