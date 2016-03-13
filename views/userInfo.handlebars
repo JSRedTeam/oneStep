@@ -1,4 +1,103 @@
 <link rel="stylesheet" href="/stylesheets/userInfo.css">
-<div class="container-fluid">
-  <label>{{title}}</label>
+<div class="container-fluid user-info">
+  <div class="row header-group">
+    <div class="col-xs-12 text-center">
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+  {{#if user}}
+  <div class="row authenticated margin-top">
+    <div class="col-xs-4 col-xs-offset-1">
+      <img src="{{user.image}}" alt="image" class="img-thumbnail">
+    </div>
+    <div class="col-xs-4 col-xs-offset-1">
+      <label>{{user.name}}</label>
+    </div>
+  </div>
+  {{else}}
+  <div class="row login-or-register margin-top">
+    <a type="button" href="/login" class="col-xs-4 col-xs-offset-1 btn btn-primary text-center">Login</a>
+    <a type="button" href="/register" class="col-xs-4 col-xs-offset-2 btn btn-primary">Register</a>
+  </div>
+  {{/if}}
+  <div class="row order-status margin-top">
+    <div class="col-xs-12 all-order-status">
+      {{#if user}}
+      <a class="row" href="/orderStatus">
+      {{else}}
+      <a class="row" href="/loginOrRegister">
+      {{/if}}
+        <label class="col-xs-11"> All Order Status</label>
+        <i class="col-xs-1 glyphicon glyphicon-menu-right text-right"></i>
+      </a>
+    </div>
+    <div class="row detail-order-status">
+      <div class="col-xs-2 text-center">
+        {{#if user}}
+        <a href="/orderStatus/pendingPay">
+        {{else}}
+        <a href="/loginOrRegister">
+        {{/if}}
+          <i class="glyphicon glyphicon-credit-card"></i>
+          <label> Pending Pay</label>
+        </a>
+      </div>
+      <div class="col-xs-2  text-center">
+        {{#if user}}
+        <a href="/orderStatus/pendingDelivery">
+        {{else}}
+        <a href="/loginOrRegister">
+        {{/if}}
+          <i class="glyphicon glyphicon-inbox"></i>
+          <label>Pending Delivery</label>
+        </a>
+      </div>
+      <div class="col-xs-2 text-center">
+        {{#if user}}
+        <a href="/orderStatus/pendingReceive">
+        {{else}}
+        <a href="/loginOrRegister">
+        {{/if}}
+          <i class="glyphicon glyphicon-road"></i>
+          <label>Pending Receive</label>
+        </a>
+      </div>
+      <div class="col-xs-2 text-center">
+        {{#if user}}
+        <a href="/orderStatus/pendingComment">
+        {{else}}
+        <a href="/loginOrRegister">
+        {{/if}}
+          <i class="glyphicon glyphicon-thumbs-up"></i>
+          <label>Pending Comment</label>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row order-history margin-top">
+    <div class="col-xs-12">
+      {{#if user}}
+      <a class="row" href="/orderHistory">
+      {{else}}
+      <a class="row" href="/loginOrRegister">
+      {{/if}}
+        <label class="col-xs-11"> Order History</label>
+        <i class="col-xs-1 glyphicon glyphicon-menu-right text-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="row profile-and-address margin-top">
+    <div class="col-xs-12">
+      {{#if user}}
+      <a class="row" href="/profileAndAddress">
+      {{else}}
+      <a class="row" href="/loginOrRegister">
+      {{/if}}
+        <label class="col-xs-11"> Profile and address</label>
+        <i class="col-xs-1 glyphicon glyphicon-menu-right text-right"></i>
+      </a>
+    </div>
+  </div>
 </div>

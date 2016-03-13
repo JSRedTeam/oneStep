@@ -1,0 +1,56 @@
+.user-info{
+  background-color: lightgrey;
+  font-size: 2em;
+}
+.user-info >*{
+  background-color: white;
+}
+
+.header-group{
+  line-height: 4em;
+}
+.header-group h1{
+  padding-top: 0.6em;
+  font-size: 2em;
+  padding-bottom: 0.6em;
+}
+
+.login-or-register, .authenticated{
+  padding-top: 1.4em;
+  height: 8em;
+}
+
+a{
+  color: black;
+}
+
+.login-or-register a{
+  height: 3em;
+  font-size: 2em;
+  padding-top: 0.8em;
+}
+
+.authenticated{
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+.all-order-status, .profile-and-address, .order-history{
+  border-bottom: solid #F2F0F0;
+  font-size: 1.5em;
+}
+.detail-order-status{
+  padding-top: 7.5em;
+  padding-left: 3em;
+  padding-bottom: 1em;
+}
+
+.detail-order-status div{
+  border: solid;
+  margin-right: 2.2em;
+}
+
+.margin-top{
+  margin-top: 0.7em;
+}
+
+
