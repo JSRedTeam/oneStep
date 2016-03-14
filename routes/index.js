@@ -27,12 +27,12 @@ router.get('/userInfo', function(req, res, next){
 });
 
 router.get('/login',function(req,res,next){
+  res.locals.title = "Login";
   res.render('login');
 })
 
 router.get('/register',function(req,res,next){
   res.locals.title = "Register";
-  console.log(req.title);
   res.render('register');
 })
 

@@ -11,7 +11,12 @@ var UserSchema = new Schema({
   salt    : { type: String },
   phones   : [{phoneNumber :Number,isDefault : Boolean}],
   addresses : [{address:String, isDefault: Boolean}],
-  orders  : [ orderId:Schema.ObjectId ]
+  orders  : [
+    {
+      type:Schema.ObjectId,
+      ref: 'Order'
+    }
+  ]
 });
 
 UserSchema.pre('save', function(next) {
