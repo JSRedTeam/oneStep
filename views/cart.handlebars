@@ -1,26 +1,14 @@
 <link rel="stylesheet" href="/stylesheets/cart.css">
 
 <div class="container-fluid cart">
- {{!--  <div class="row header-group">
-    <div class="col-xs-2">
-      <a href="/index" class=" glyphicon glyphicon-chevron-left  back-arrow"></a>
-    </div>
-    <div class="col-xs-8">
-      <h1 class="text-center">{{title}}</h1>
-    </div>
-  </div> --}}
-  <form class="row margin-top" method="POST" action="/deliveryInfo">
+
+  <form class="row margin-top">
     <div class="col-xs-12">
+
       <div class="cart-table-th row  margin-top">
-        <div class="col-xs-4">
-          <div class="select-all">
-            <input type="checkbox" name="selectAll" value="true">
-            <label for="">Select All</label>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center">
+        <div class="col-xs-8">
           <div class="total-price">
-            <label for="">Total Price:<label>
+            <label for="">Total Price:&nbsp;<label>
             <div>{{totalPrice}}</div>
           </div>
         </div>
@@ -56,18 +44,17 @@
         <ul class="list-unstyled col-xs-12">
         {{#each dishArray}}
           <li class="row">
-            <div class="col-xs-4">
-              <div class="select">
-                <input type="checkbox" name="select" value="true">
-                <label for="">{{dishName}}</label>
+            <div class="col-xs-5">
+              <div class="dish-name padding-top">
+                {{dishName}}
               </div>
             </div>
-            <div class="col-xs-4 text-center">
-              <div class="unit-price">
-                <div>{{unitPrice}}</div>
+            <div class="col-xs-2 text-center">
+              <div class="unit-price padding-top">
+                {{unitPrice}}
               </div>
             </div>
-              <div class="col-xs-4  text-center">
+            <div class="col-xs-4  text-center">
               <div class="quantity btn-group row">
                 <button type="button" class="col-xs-4 btn btn-default">-</button>
                 <input type="text" class="col-xs-4 btn btn-default" value={{quantity}}>
@@ -80,15 +67,9 @@
       </div>
 
       <div class="cart-table-footer row  margin-top">
-        <div class="col-xs-4 ">
-          <div class="select-all">
-            <input type="checkbox" name="selectAll" value="true">
-            <label for="">Select All</label>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center">
+        <div class="col-xs-8">
           <div class="total-price">
-            <label for="">Total Price:<label>
+            <label for="">Total Price:&nbsp;<label>
             <div>{{totalPrice}}</div>
           </div>
         </div>
@@ -100,8 +81,10 @@
           {{/if}}
         </div>
       </div>
+
     </div>
   </form>
+
 </div>
 
 

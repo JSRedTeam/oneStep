@@ -11,7 +11,7 @@ router.get('/cart', function(req, res, next){
   res.render('cart',{
     title: 'Cart',
     totalPrice:200,
-    user:{name:"Claire"},
+    // user:{name:"Claire"},
     dishArray:[
       {dishName:"Tudousi",unitPrice:"20",quantity:1},
       {dishName:"Paigu",unitPrice:"40",quantity:2},
