@@ -36,6 +36,9 @@ router.get('/register',function(req,res,next){
   res.render('register');
 })
 
-
+router.get('/deliveryInfo',function(req,res,next){
+  res.locals.title = "Delivery";
+  res.render('deliveryInfo');
+})
 
 module.exports = router;
