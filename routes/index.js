@@ -26,4 +26,16 @@ router.get('/userInfo', function(req, res, next){
   res.render('userInfo',{title: "Me"});
 });
 
+router.get('/login',function(req,res,next){
+  res.render('login');
+})
+
+router.get('/register',function(req,res,next){
+  res.locals.title = "Register";
+  console.log(req.title);
+  res.render('register');
+})
+
+
+
 module.exports = router;
