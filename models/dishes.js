@@ -10,3 +10,4 @@ var DishSchema = new Schema({
   ingredients : [{name: String, price: Number, count: Number, weight: String}],
   cookingSteps: [String]
 });
+module.exports = mongoose.model('Dish',DishSchema);
