@@ -1,23 +1,22 @@
 .user-info{
   background-color: lightgrey;
-  font-size: 2em;
 }
 .user-info >*{
   background-color: white;
 }
 
-.header-group{
-  line-height: 4em;
+/*.header-group{
+  line-height: 4rem;
 }
 .header-group h1{
-  padding-top: 0.6em;
+  padding-top: 0.6rem;
   font-size: 2em;
-  padding-bottom: 0.6em;
-}
+  padding-bottom: 0.6rem;
+}*/
 
 .login-or-register, .authenticated{
-  padding-top: 1.4em;
-  height: 8em;
+  padding-top: 2rem;
+  height: 8rem;
 }
 
 a{
@@ -25,32 +24,33 @@ a{
 }
 
 .login-or-register a{
-  height: 3em;
-  font-size: 2em;
-  padding-top: 0.8em;
+  height: 4rem;
+  font-size: 2rem;
+  /*padding-top: 0.8rem;*/
 }
 
 .authenticated{
-  padding-top: 1em;
-  font-size: 1.5em;
+  padding-top: 1rem;
+  font-size: 1.5rem;
 }
 .all-order-status, .profile-and-address, .order-history{
   border-bottom: solid #F2F0F0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .detail-order-status{
-  padding-top: 7.5em;
-  padding-left: 3em;
-  padding-bottom: 1em;
+  padding-top: 7.5rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
 }
 
 .detail-order-status div{
   border: solid;
-  margin-right: 2.2em;
+  font-size: 0.8rem;
+  margin-right: 2.2rem;
 }
 
 .margin-top{
-  margin-top: 0.7em;
+  margin-top: 0.7rem;
 }
 
 
