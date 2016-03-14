@@ -1,7 +1,6 @@
 
 .cart{
   background-color: lightgrey;
-  font-size: 2em;
 }
 
 .cart >*{
@@ -10,63 +9,58 @@
 
 
 .header-group{
-  line-height: 4em;
+  line-height: 4rem;
 }
 
 .header-group h1{
-  padding-top: 0.6em;
-  font-size: 2em;
-  padding-bottom: 0.6em;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .header-group a{
-  padding-top: 0.8em;
-  font-size: 2em;
-  padding-bottom: 0.6em;
+  padding-top: 0.8rem;
+  padding-bottom: 0.6rem;
 }
 
 .cart-table-footer button, .cart-table-th button{
-  font-size: 1.5em;
 }
 
 .select-all, .total-price{
- padding-top: 0.5em;
+ padding-top: 0.5rem;
 }
 
 .cart .cart-table-th, .cart .cart-table-footer, .cart-order-list{
-    font-size: 1.5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-bottom: solid #F2F0F0;
 }
 
 .cart-order-list li{
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 
 .quantity *{
-  line-height: 3.4em;
+  line-height: 3.4rem;
 }
 
 input[type='checkbox']{
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.8rem;
+  height: 0.8rem;
 }
 
 .login-or-register{
-  margin-top: 15em;
+  margin-top: 15rem;
 }
 
 .login-or-register *{
-  font-size: 1.2em;
-  margin-top: 0.3em;
+  margin-top: 0.3rem;
 }
 
 .margin-top{
-  margin-top: 0.7em;
+  margin-top: 0.7rem;
 }
 .padding-top{
-  margin-top: 0.7em;
+  margin-top: 0.7rem;
 }
 
 
