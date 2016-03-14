@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+// define cImage,randomSuggestion by controller
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Claire'});
+  res.render('index', { cImage: [{id:"_id",url:"url",name:"string",price:"number"}],
+    randomSuggestion: [{id:"_id",url:"url",name:"string",price:"number"}]});
 });
 
 /*GET Cart page.*/
@@ -11,7 +13,7 @@ router.get('/cart', function(req, res, next){
   res.render('cart',{
     title: 'Cart',
     totalPrice:200,
-    user:{name:"Claire"},
+    // user:{name:"Claire"},
     dishArray:[
       {dishName:"Tudousi",unitPrice:"20",quantity:1},
       {dishName:"Paigu",unitPrice:"40",quantity:2},
@@ -36,6 +38,9 @@ router.get('/register',function(req,res,next){
   res.render('register');
 })
 
-
+router.get('/deliveryInfo',function(req,res,next){
+  res.locals.title = "Delivery";
+  res.render('deliveryInfo');
+})
 
 module.exports = router;
