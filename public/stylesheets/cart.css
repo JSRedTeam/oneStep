@@ -7,28 +7,6 @@
   background-color: white;
 }
 
-
-.header-group{
-  line-height: 4rem;
-}
-
-.header-group h1{
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-}
-
-.header-group a{
-  padding-top: 0.8rem;
-  padding-bottom: 0.6rem;
-}
-
-.cart-table-footer button, .cart-table-th button{
-}
-
-.select-all, .total-price{
- padding-top: 0.5rem;
-}
-
 .cart .cart-table-th, .cart .cart-table-footer, .cart-order-list{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -39,29 +17,14 @@
   padding-top: 1rem;
 }
 
-.quantity *{
-  line-height: 3.4rem;
-}
-
-input[type='checkbox']{
-  width: 0.8rem;
-  height: 0.8rem;
-}
-
-.login-or-register{
-  margin-top: 15rem;
-}
-
-.login-or-register *{
-  margin-top: 0.3rem;
+.padding-top{
+  padding-top: 0.7rem;
 }
 
 .margin-top{
   margin-top: 0.7rem;
 }
-.padding-top{
-  margin-top: 0.7rem;
-}
+
 
 
 

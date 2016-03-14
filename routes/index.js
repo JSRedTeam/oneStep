@@ -13,7 +13,7 @@ router.get('/cart', function(req, res, next){
   res.render('cart',{
     title: 'Cart',
     totalPrice:200,
-    user:{name:"Claire"},
+    // user:{name:"Claire"},
     dishArray:[
       {dishName:"Tudousi",unitPrice:"20",quantity:1},
       {dishName:"Paigu",unitPrice:"40",quantity:2},
@@ -29,15 +29,18 @@ router.get('/userInfo', function(req, res, next){
 });
 
 router.get('/login',function(req,res,next){
+  res.locals.title = "Login";
   res.render('login');
 })
 
 router.get('/register',function(req,res,next){
   res.locals.title = "Register";
-  console.log(req.title);
   res.render('register');
 })
 
-
+router.get('/deliveryInfo',function(req,res,next){
+  res.locals.title = "Delivery";
+  res.render('deliveryInfo');
+})
 
 module.exports = router;
