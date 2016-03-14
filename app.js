@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/epam');
+mongoose.connect('mongodb://localhost/oneStep');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -28,10 +28,16 @@ app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+
+  if (req.title) {
+    res.locals.title = req.title;
+  }
+
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
+
 
 // error handlers
 
